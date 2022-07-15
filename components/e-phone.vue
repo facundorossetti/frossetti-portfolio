@@ -32,7 +32,7 @@ export default {
   width: 270px;
   border: 8px solid black;
   border-radius: 40px;
-  background: $white;
+  background: $white-off-200;
   .topContent {
     color: black;
     height: 25px;

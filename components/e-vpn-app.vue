@@ -92,7 +92,7 @@ export default {
   gap: 30px;
   height: 100%;
   width: 100%;
-  color: $white;
+  color: $white-off-200;
   border-bottom-right-radius: 30px;
   border-bottom-left-radius: 30px;
   border-top-right-radius: 10px;
@@ -140,7 +140,7 @@ export default {
   }
   .status-text {
     background: $dark-blue;
-    color: $white;
+    color: $white-off-200;
     font-size: 18px;
     font-weight: bold;
     padding: 2px 8px;
@@ -149,7 +149,7 @@ export default {
   .location-button {
     position: relative;
     background: $dark-blue;
-    color: $white;
+    color: $white-off-200;
     font-size: 12px;
     border-radius: 8px;
     &::after {

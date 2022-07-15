@@ -90,7 +90,7 @@ export default {
   font-size: 30px;
   transition: 1s;
   &.active {
-    color: $green !important;
+    color: $green-200 !important;
   }
 }
 </style>

@@ -41,7 +41,7 @@ export default {
   position: absolute;
   bottom: 20px;
   $bg: $dark-blue;
-  $font: $white;
+  $font: $white-off-200;
   $cellphoneBg: #e8e8eb;
   height: 250px;
   width: 100%;

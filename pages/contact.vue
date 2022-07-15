@@ -27,7 +27,7 @@ export default {
   padding: 12px 16px;
   border-radius: 8px;
   &:hover {
-    color: $white;
+    color: $white-off-200;
   }
 }
 </style>

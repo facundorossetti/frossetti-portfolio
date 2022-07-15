@@ -60,7 +60,7 @@ nav .link {
   }
 }
 .icon {
-  color: $white !important;
+  color: $white-off-200 !important;
   transition: .3s;
   &:hover {
     color: $accent-green !important;

@@ -142,7 +142,7 @@ p, h5, h5 {
   gap: 10px;
   height: 100%;
   width: 100%;
-  color: $white;
+  color: $white-off-200;
   border-bottom-right-radius: 30px;
   border-bottom-left-radius: 30px;
   border-top-right-radius: 10px;
@@ -155,7 +155,7 @@ p, h5, h5 {
     height: 30px;
     border-radius: 50%;
     background-color: $dark-blue;
-    border: 2px solid $light-pink;
+    border: 2px solid $lightpink;
     &::before {
       content: "";
       position: absolute;
@@ -172,7 +172,7 @@ p, h5, h5 {
     opacity: 0.85;
     z-index: 10;
     cursor: pointer;
-    background: $light-pink;
+    background: $lightpink;
     width: 40px;
     height: 60px;
     border-radius: 10px;
@@ -184,13 +184,13 @@ p, h5, h5 {
     position: relative;
     z-index: 10;
     opacity: 0.85;
-    background: $light-pink;
+    background: $lightpink;
     border-radius: 12px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     padding: 5px 15px 0;
     &.gym {
-      background: $light-pink;
+      background: $lightpink;
     }
   }
   .running-box {
@@ -198,8 +198,8 @@ p, h5, h5 {
     z-index: 10;
     height: 90px;
     width: 100%;
-    color: $white;
-    background: $light-pink;
+    color: $white-off-200;
+    background: $lightpink;
     border-radius: 12px;
     border-top-left-radius: 0;
   }
@@ -208,8 +208,8 @@ p, h5, h5 {
     z-index: 10;
     height: 100px;
     width: 100%;
-    color: $white;
-    background: $light-pink;
+    color: $white-off-200;
+    background: $lightpink;
     border-radius: 20px;
     border-top-left-radius: 0;
     gap: 10px;

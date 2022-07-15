@@ -91,7 +91,7 @@ export default {
   color: #243643;
   font-size: 14px;
   &.color-hover:hover {
-    color: $white;
+    color: $white-off-200;
   }
   &.large-icon {
     font-size: 20px;

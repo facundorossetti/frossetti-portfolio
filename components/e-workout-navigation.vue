@@ -41,8 +41,8 @@ export default {
   z-index: 10;
   position: absolute;
   bottom: 0;
-  $bg: $light-pink;
-  $font: $white;
+  $bg: $lightpink;
+  $font: $white-off-200;
   $cellphoneBg: #27405e;
 
   margin-bottom: 5px;
