@@ -103,7 +103,7 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: $red;
+    background: #e16162;
     width: 70%;
     height: 220%;
     top: -150%;
