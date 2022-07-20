@@ -25,12 +25,9 @@
         </a>
       </v-col>
       <v-col cols="12" align="center">
-        <button class="d-flex align-center justify-center mt-6 hello-button">
+        <button class="d-flex align-center justify-center mt-6 hello-button" @click="goToSocial()">
           See more...
-          <span
-            class="font-white mdi mdi-github ml-2"
-            @click="goToSocial()"
-          >
+          <span class="font-white mdi mdi-github ml-2">
           </span>
         </button>
       </v-col>
