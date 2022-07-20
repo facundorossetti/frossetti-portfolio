@@ -5,7 +5,7 @@
     </div>
     <div class="mobile-menu d-flex align-center justify-end" :class="[{ animate: menuIsOpen }]">
       <transition name="fade">
-        <div v-if="menuIsOpen" class="d-flex no-wrap">
+        <div v-show="menuIsOpen" class="links-wrapper">
           <NuxtLink v-for="link in links" :key="link.name" :to="`/${link.route}`" class="link px-2" >
             <span class="link-icon mdi font-white" :class="[{ active: link.active }, link.icon]" @click="goTo(link)"></span>
           </NuxtLink>
@@ -26,6 +26,11 @@ export default {
         {name: 'projects', route: 'projects', icon: 'mdi-briefcase', active: false},
         {name: 'skills', route: 'skills', icon: 'mdi-head-lightbulb-outline', active: false},
         {name: 'contact', route: 'contact', icon: 'mdi-card-account-mail', active: false}
+      ],
+      icons: [
+        'mdi-github',
+        'mdi-linkedin',
+        'mdi-email',
       ],
       menuIsOpen: false,
     }
@@ -81,6 +86,10 @@ export default {
   padding-right: 12px;
   width: 50px;
   transition: width .4s, background 1s;
+  .links-wrapper {
+    display: flex;
+    flex-wrap: no-wrap;
+  }
   &.animate {
     width: 240px;
     background: rgba(49, 175, 180, 0.6);

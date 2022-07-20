@@ -1,16 +1,15 @@
 <template>
-  <v-footer padless color="fr-green" class="d-flex flex-column py-10" app>
-    <div>
-      <v-btn
-        v-for="icon in icons"
-        :key="icon"
-        class="mx-4"
-        icon
-      >
-        <v-icon size="32px" color="fr-white">{{ icon }}</v-icon>
-      </v-btn>
-    </div>
-  </v-footer>
+  <div class="e-footer d-flex align-center">
+    <v-btn
+      v-for="icon in icons"
+      :key="icon"
+      class="mx-2 font-white"
+      icon
+      :ripple="false"
+    >
+      <v-icon class="icon" size="32px">{{ icon }}</v-icon>
+    </v-btn>
+  </div>
 </template>
 
 <script>

@@ -43,6 +43,7 @@ export default {
     height: 280px;
     width: 280px;
     clip-path: inset(5px round 100px 30px 100px 30px);
+    margin-bottom: 60px;
   }
   .e-heading {
     font-size: 1.750rem;

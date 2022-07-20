@@ -8,15 +8,14 @@
         <NuxtLink v-for="link in links" :key="link.name" :to="`/${link.route}`" class="link px-2 py-1" >{{ link.name }}</NuxtLink>
       </div>
       <div class="d-flex flex-column align-center">
-        <v-btn
+        <span
           v-for="icon in icons"
-          :key="icon"
-          class="mb-5"
-          icon
-          :ripple="false"
+          :key="icon.name"
+          class="mx-4 my-2 font-white mdi icon"
+          :class="icon.name"
+          @click="goToSocial(icon)"
         >
-          <v-icon class="icon" size="32px">{{ icon }}</v-icon>
-        </v-btn>
+        </span>
       </div>
     </nav>
   </v-container>
@@ -34,12 +33,17 @@ export default {
         {name: 'contact', route: 'contact'}
       ],
       icons: [
-        'mdi-github',
-        'mdi-linkedin',
-        'mdi-email',
+        { name:'mdi-github', url: 'https://github.com/facundorossetti' },
+        { name:'mdi-linkedin', url: 'https://www.linkedin.com/in/facundo-rossetti-83a8a6b5' },
+        { name:'mdi-email', url: 'mailto:facundorossetti@outlook.com'}
       ],
     }
   },
+  methods: {
+    goToSocial(icon) {
+      window.open(icon.url, '_blank');
+    }
+  }
 }
 </script>
 
@@ -60,7 +64,9 @@ nav .link {
   }
 }
 .icon {
+  cursor: pointer;
   color: $white-off-200 !important;
+  font-size: 2rem;
   transition: .3s;
   &:hover {
     color: $accent-green !important;
