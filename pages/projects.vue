@@ -19,9 +19,9 @@
         </VueSlickCarousel>
       </v-col>
       <v-col align="center" md="7" class="desktop-col">
-        <h2 class="mb-14">Tech Zone E-commerce</h2>
-        <a href="https://fr-tech-zone.herokuapp.com/" target="_blank">
-          <img class="techzone-img" src="@/static/hero-responsive.png" alt="techzone-app">
+        <h2 class="mb-14">Fince App</h2>
+        <a href="http://www.fince.com.ar/" target="_blank">
+          <img class="fince-app-img" src="@/static/fince.jpg" alt="fince-app" />
         </a>
       </v-col>
       <v-col cols="12" align="center">
@@ -75,9 +75,16 @@ export default {
     color: $white-off-200;
   }
 }
+.fince-app-img {
+  max-width: 700px;
+  border-radius: 20px;
+}
 @media screen and (max-width: 960px) {
   .desktop-col {
     margin-top: 60px;
+  }
+  .fince-app-img {
+    max-width: 100%;
   }
 }
 </style>
