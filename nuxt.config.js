@@ -14,6 +14,8 @@ export default {
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon-32x32.png' }],
   },
 
+  target: 'static',
+
   css: ["~/assets/style/main.scss"],
 
   plugins: [],
